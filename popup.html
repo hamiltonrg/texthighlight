@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Highlighter</title>
+    <style>
+        body { padding: 10px; }
+        #termsList { margin-top: 10px; }
+        .term-div { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="newTerm" placeholder="Enter term or regex"/>
+        <button id="addTerm">Add</button>
+        <button id="removeTerms">Remove Selected</button>
+    </div>
+    <div id="termsList">
+        <!-- Dynamic list of terms will be displayed here -->
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
