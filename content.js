@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     console.log("Message received:", request);
 
-    if (request.action === "updateHighlights" || request.action === "highlightNow") {
+    if (request.action === "highlightNow") {
         highlightTerms(request.terms);
     }
 });
